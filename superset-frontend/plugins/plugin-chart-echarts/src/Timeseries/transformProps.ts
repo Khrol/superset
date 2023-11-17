@@ -447,6 +447,9 @@ export default function transformProps(
       formatter: xAxisFormatter,
       rotate: xAxisLabelRotation,
     },
+    axisTick: {
+      alignWithLabel: true,
+    },
     minInterval:
       xAxisType === 'time' && timeGrainSqla
         ? TIMEGRAIN_TO_TIMESTAMP[timeGrainSqla]
